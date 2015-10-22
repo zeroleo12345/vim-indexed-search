@@ -12,6 +12,8 @@ endfunction
 
 function! s:colored_echo(msg, hl)
     execute "echohl ". a:hl
+    "add by zlx
+    execute "echohl MoreMsg"
     redraw
     echo a:msg
     echohl None
